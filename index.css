@@ -16,6 +16,31 @@
   margin: -1px;
   width: 10px
 } */
-@media (max-width: 800) {
-  
+
+.container {
+  display: grid;
+  gap: 2em;
+}
+.main-nav li {
+  position: relative;
+}
+.one li, .three li, .two li{
+  display: none;
+}
+.header {
+  background-image: url('/images/bg-pattern-intro.svg');
+}
+@media (max-width: 800px) {
+  .mobile-header-section {
+    background-color:  hsl(13, 100%, 72%);
+  }
+  .navbox {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  .main-nav {
+    align-items: center;
+  }
 }
